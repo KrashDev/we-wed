@@ -1,0 +1,207 @@
+.container-fluid {
+    padding:0px !important;
+}
+.main {
+    background-image:url("DSC_0961.jpg");
+    height:700px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+
+.us {
+    position:relative;
+    top:10%;
+    margin-top:20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    color:#fff;
+    text-align: center;
+}
+
+.lead {
+    margin-top: 35px;
+    line-height: 2em;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    text-align: center;
+}
+
+.date {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    text-align: center;
+}
+
+/* countdown clock */
+
+#days {
+    vertical-align: middle;
+    position: relative;
+    top: 330px;
+    left: 10%;
+    text-align: center;
+    font-size: 16px;
+    padding:15px;
+    display:inline;
+    background:#000;
+    color:#fff;
+    height:20px;
+    width:20px;
+    border-radius:75%;
+    opacity:0.7;
+}
+#hours {
+    position: relative;
+    top: 330px;
+    left: 12%;
+    font-size: 16px;
+    padding:15px;
+    display:inline;
+    background:#000;
+    color:#fff;
+    border-radius:50%;
+    opacity:0.7;
+}
+#minutes {
+    position: relative;
+    top: 330px;
+    left: 14%;
+    font-size: 16px;
+    padding:15px;
+    display:inline;
+    background:#000;
+    color:#fff;
+    border-radius:50%;
+    opacity:0.7;
+}
+#seconds {
+    position: relative;
+    top: 330px;
+    left: 16%;
+    font-size: 16px;
+    padding:15px;
+    display:inline;
+    background:#000;
+    color:#fff;
+    border-radius:50%;
+    opacity:0.7;
+}
+
+.names {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin-left: 7%;
+    margin-top:1%;
+}
+.line {
+    border-bottom: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+}
+/* 
+hr {
+    border-color: blue -moz-use-text-color #FFFFFF;
+    border-style: solid none;
+    border-width: 20px 0;
+} */
+
+#rsvp {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+#rsvp1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#hotel {
+
+    padding-top:40px;
+    border-top: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+#hotel1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#gallery {
+
+    padding-top:40px;
+    border-top: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+#gallery1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#directions {
+
+    padding-top:40px;
+    border-top: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+#directions1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#registry {
+
+    padding-top:40px;
+    border-top: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+#registry1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#thanks {
+
+    padding-top:40px;
+    border-top: 2px solid #999;
+    margin-top:1%;
+    width:100%;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+#thanks1, p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
