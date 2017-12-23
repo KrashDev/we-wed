@@ -1,91 +1,62 @@
+body {
+    /* background-image:url("wood3.jpg"); */
+}
 .container-fluid {
     padding:0px !important;
 }
-#submit {
-    top:0px;
-    left:0%;
-    border-radius:6px;
-    background-color: #003380;
-    border-color: #003380;
-}
-/* .control-label {
-    margin-bottom:5%;
-} */
-.landing {
-    background-image:url("eight_horns.png");
-}
-.third {
-    margin-bottom:5%;
-}
-legend {
-    margin-left: 15%;
-    width:50%;
-    margin-bottom:4%;
-}
 .navbar {
-    font-size: 20px;
-    border-radius:0px !important;
-    margin-bottom: 0px !important;
     border-bottom:2px solid #666666 !important;
     text-decoration: none !important;
     font-family: 'Pacifico', cursive;
     color:#666666 !important;
+
 }
-#submit {
-    margin-bottom:5%;
-}
-.polaroid {
+#main {
     background-image:url("DSC_0961.jpg");
     height:500px;
-    margin-top:5%;
+    width:80%;
+    margin-left:10%;
+    margin-top:6%;
     background-repeat:no-repeat;
     background-size: cover; 
     border: 15px solid #fff;
     border-bottom: 53px solid #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.polaroid p {
-    top:92%;
-    left:1%;
-    position: absolute;
-    text-align: center;
-    width:100%;
-}
-.us {
-    position:relative;
-    top:0%;
-    margin-top:1%;
+.header {
+    background: #fff;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-weight: normal;
     font-family: 'Pacifico', cursive;
     font-size: 64px;
-    color:#003380;
+    color:#fff;
     text-align: center;
-}
-.name {
-    position:relative;
-    margin-top: 2%;
-    top:5px;
-    left:0px;
-    font-size: 64px;
-    /* font-family: 'Cookie', cursive; */
-    font-family: 'Sacramento', cursive;
-    color:#003380;
-    text-align: center;
-    /* text-shadow: 1px 1px #0052cc; */
 }
 
-.leading {
+.us {
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    color:#fff;
+    text-align: center;
+}
+
+.lead {
     position:relative;
     top:5px;
-    font-size: 32px;
+    left:-5px;
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
-    color:#003380;
+    color:#fff;
     text-align: center;
 }
 
 .date {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
-    color:#003380;
+    color:#fff;
     text-align: center;
 }
 
@@ -93,10 +64,10 @@ legend {
 #clockdiv {
     position:relative;
     display:inline;
-    top:-145px;
-    left:70%;
-    color:#003380;
-    font-size:26px;
+    top:100px;
+    left:4%;
+    color:#474747;
+    font-size:36px;
     font-family: 'Pacifico', cursive;
 
 }
@@ -105,8 +76,10 @@ legend {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
     margin-left: 7%;
-    margin-top:1%;
-    margin-bottom:1%;
+    padding-top: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border-top: 4px solid #474747;
 }
 .line {
     border-bottom: 2px solid #999;
@@ -126,22 +99,17 @@ hr {
     top:-167px;
     margin-right:10px;
 }
-.line {
-    width:50% !important;
-    color:#666;
-    position:absolute;
-
-}
 .rsvp {
-    margin-bottom:5%;
     margin-top:0%;
-    /* background-image:url("eight_horns.png"); */
+    background-image:url("eight_horns.png");
     border-top:2px solid #999;
     width:100%;
-    padding-top: 2%;
+    height: 400px;
 }
 .rsvp1 {
     text-align: left;
+    margin-left: 24%;
+    width: 36%;
     font-size:30px;
     font-family: 'Roboto', sans-serif;
 }
@@ -149,20 +117,18 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: left;
+    margin-left: 24%;
+    width: 36%;
 }
-.flowers {
-    position:absolute;
-    top:0%;
-    left:90%;
-}
+
 .hotel {
-    background-image:url("eight_horns.png");
     padding-top:40px;
     border-top: 2px solid #999;
     width:100%;
+    height: 412px;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    padding-bottom:5%;
+    text-align: center;
 
 }
 .hotel1 {
@@ -170,99 +136,102 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 .hotel2 {
-    width:100%;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: left;
+    margin-left: 24%;
+    width: 36%;
 }
 
 .hotel-directions {
-    margin-right: 5%;
     border-radius:18px;
     height: 200px;
     width: 284px;
     position: relative;
-    filter: drop-shadow(0px 3px 5px #666);
-}
-.hotel-map {
-    border-radius:18px;
-    height: 200px;
-    width: 284px;
-    position: relative;
+    top: -183px;
+    left: 25%;
     filter: drop-shadow(0px 3px 5px #666);
 }
 
 .gallery {
     padding-top:40px;
     border-top: 2px solid #999;
+    background-image:url("eight_horns.png");
+    margin-top:1%;
     width:100%;
+    height: 532px;
     margin-bottom:0%;
 }
 #first {
     /* text-decoration: underline; */
     text-align: left;
     margin-top:2%;
+    margin-left: 15%;
     font-family: 'Pacifico', cursive !important;
     font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .second {
+    margin-left: 15%;
     text-align: left;
     font-size:30px;
     font-family: 'Roboto', sans-serif;
 }
 .third {
+    margin-left: 15%;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: left;
+    width: 36%;
 }
 .us2 {
     border-radius:18px;
     height: 200px;
     width: 284px;
     position: relative;
-    margin-top: 5%;
-    margin-bottom:5%;
-    margin-right:1%;
+    top: -335px;
+    margin-top: 16px;
+    margin-right: 10px;
+    left: 53%;
     filter: drop-shadow(0px 3px 5px #666);
 }
 
 .directions {
-    background-image:url("eight_horns.png");
     padding-top:40px;
     border-top: 2px solid #999;
     width:100%;
+    height: 410px;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    padding-bottom: 4%;
+    text-align: center; 
 }
 
 .directions2 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: left;
+    margin-left: 24%;
+    width: 36%;
 }
 .map-directions {
     border-radius:18px;
     height: 200px;
     width: 284px;
     position: relative;
-    filter: drop-shadow(0px 3px 5px #666);
-}
-.venue-directions {
-    margin-right: 5%;
-    border-radius:18px;
-    height: 200px;
-    width: 284px;
-    position: relative;
+    top: -109px;
+    left: 126%;
     filter: drop-shadow(0px 3px 5px #666);
 }
 .registry {
+    background-image:url("eight_horns.png");
     padding-top:40px;
     border-top: 2px solid #999;
+    margin-top:1%;
     width:100%;
+    height:464px;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    text-align: left;
+    text-align: center;
 }
 .registry1 {
     font-size:30;
@@ -275,21 +244,12 @@ hr {
     margin-left: 24%;
     width: 36%;
 }
-.registry-logo {
-    border:2px solid #666666;
-    border-radius:10px;
-    filter: drop-shadow(0px 3px 5px #666);
-    height: 100px;
-    width: 184px;
-}
 
 .thanks {
-    background-image:url("eight_horns.png");
     text-decoration: underline;
     padding-top:40px;
     border-top: 2px solid #999;
-    border-bottom: 2px solid #999;
-    padding-bottom: 4%;
+    /* height:400px; */
     width:100%;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
