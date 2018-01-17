@@ -1,3 +1,5 @@
+
+
 var deadline = 'May 5 2018 23:59:59 GMT+0200';
 
 function getTimeRemaining(endtime){
@@ -19,10 +21,10 @@ function getTimeRemaining(endtime){
     var clock = document.getElementById(id);
     var timeinterval = setInterval(function(){
       var t = getTimeRemaining(endtime);
-      clock.innerHTML = 'days: ' + t.days + '<br>' +
-                        'hours: '+ t.hours + '<br>' +
-                        'minutes: ' + t.minutes + '<br>' +
-                        'seconds: ' + t.seconds;
+      clock.innerHTML = 'Days: ' + t.days + ' ' +
+                        'Hours: '+ t.hours + ' ' +
+                        'Minutes: ' + t.minutes + ' ' +
+                        'Seconds: ' + t.seconds;
       if(t.total<=0){
         clearInterval(timeinterval);
       }
@@ -30,3 +32,38 @@ function getTimeRemaining(endtime){
   }
 
   initializeClock('clockdiv', deadline);
+
+
+  // image slideshow 
+  $("#slideshow > div:gt(0)").hide();
+
+  setInterval(function() { 
+    $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+  },  3000);
+
+  // Get the modal for gallery images
+    var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('engagement-photos');
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+
