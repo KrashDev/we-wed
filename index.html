@@ -5,7 +5,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet">
         <!-- bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- jquery -->
@@ -18,18 +18,21 @@
 
         <title>Team Kronny is getting married!</title>
          <!-- <link rel="shortcut icon" href="assets/images/logo.png"> -->
+
+         <!-- our beautiful favicon -->
+         <link rel="icon" href="assets/images/logo.png">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-toggleable-md navbar-dark bg-faded">
+    <nav class="navbar navbar-fixed-top navbar-toggleable-md navbar-dark bg-faded">
         <a class="navbar-brand" href="#">Donny & Kristen</a>
         <ul class="nav navbar-nav">
-                <li><a href="#">RSVP</a></li>
-                <li><a href="#">Hotel</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Directions</a></li>
-                <li><a href="#">Registry</a></li>
+                <li id="rsvp-button"><a href="#">RSVP</a></li>
+                <li id="hotel-button"><a href="#">Hotel</a></li>
+                <li id="gallery-button"><a href="#">Gallery</a></li>
+                <li id="directions-button"><a href="#">Venue</a></li>
+                <li id="registry-button"><a href="#">Registry</a></li>
               </ul>
     </nav>
 
@@ -49,19 +52,19 @@
                 <!-- <div class="col-md-offset-3 col-md-6">  -->
                             <div id="slideshow">
                                     <div>
-                                        <img src="maryclairephoto.dkengagement-0140.jpg" style="height:470px">
+                                        <img src="assets/images/maryclairephoto.dkengagement-0140.jpg" style="height:500px; width:98%;" >
                                     </div>
                                     <div>
-                                        <img src="maryclairephoto.dkengagement-0250.jpg" style="height:470px">
+                                        <img src="assets/images/maryclairephoto.dkengagement-0250.jpg" style="height:500px; width:98%;" >
                                     </div>
                                     <div>
-                                        <img src="maryclairephoto.dkengagement-0150.jpg" style="height:470px">
+                                        <img src="assets/images/maryclairephoto.dkengagement-0150.jpg" style="height:500px; width:98%;" >
                                     </div>
                                     <div>
-                                        <img src="maryclairephoto.dkengagement-0260.jpg" style="height:470px">
+                                        <img src="assets/images/maryclairephoto.dkengagement-0260.jpg" style="height:500px; width:98%;" >
                                     </div>
                                     <div>
-                                        <img src="maryclairephoto.dkengagement-0161.jpg" style="height:470px">
+                                        <img src="assets/images/maryclairephoto.dkengagement-0161.jpg" style="height:500px; width:98%;" >
                                     </div>
                                     <p class="date">Sunday, May 6th 2018</p>
                                  </div>
@@ -80,117 +83,67 @@
 
         <!-- <div class="arrow-first"><img src="arrow-left.svg" style=""></div> -->
 
-    <div class="rsvp">
+    <div id="rsvp">
         <div class="row">
             <div class="col-md-offset-3 col-md-6"> 
-                <div id="first">RSVP</div>
+                <div id="first-centered">RSVP</div>
             </div>
         </div>
-        <div class="row">
-                <div class="col-md-offset-3 col-md-6"> 
-            <div class="second">Please RSVP Online</div>
-        </div>
-    </div>        
+
     <div class="row">
             <div class="col-md-offset-3 col-md-6"> 
-                <div class="third">We're so excited for all the wedding events coming up, it will be great to celebrate with everyone together. If you have any questions about locations, directions or anything else, please get in touch with Kristen or I. RSVP with the links below, our website sends your RSVP's right to my phone in real time. You better be coming!
+                <div class="third">
+                    <p>We're so excited for all the wedding events coming up! It will be great to celebrate with everyone together. If you have any questions about the location, directions, or anything else, please get in touch with Kristen or I. RSVP for you and your guest with the link below. We look forward to seeing you!
+                    </p>
+                    <p>*Please note, this is an adult only event. Leave the little ones at home and take the night off!*</p>    
             </div>  
-
-                    <form class="form-horizontal">
-                        <fieldset>
-                    
-                    <!-- Form Name -->
-                    <legend>RSVP Form</legend>
-                    
-                    <!-- Multiple Radios -->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="radios">RSVP</label>
-                      <div class="col-md-4">
-                      <div class="radio">
-                        <label for="radios-0">
-                          <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-                          Accepts with pleasure
-                        </label>
-                        </div>
-                      <div class="radio">
-                        <label for="radios-1">
-                          <input type="radio" name="radios" id="radios-1" value="2">
-                          Declines with regret
-                        </label>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Prepended text-->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="first name">Attendee</label>
-                      <div class="col-md-4">
-                        <div class="input-group">
-                          <span class="input-group-addon">first name</span>
-                          <input id="first name" name="first name" class="form-control" placeholder="" type="text" required="">
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Prepended text-->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="last name"></label>
-                      <div class="col-md-4">
-                        <div class="input-group">
-                          <span class="input-group-addon">last name</span>
-                          <input id="last name" name="last name" class="form-control" placeholder="" type="text" required="">
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Textarea -->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="textarea">Guests attending</label>
-                      <div class="col-md-4">                     
-                        <textarea class="form-control" id="textarea" name="textarea"></textarea>
-                      </div>
-                    </div>
-                    
-                    <!-- Multiple Radios -->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="radios">Dinner</label>
-                      <div class="col-md-4">
-                      <div class="radio">
-                        <label for="radios-0">
-                          <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-                          Chicken
-                        </label>
-                        </div>
-                      <div class="radio">
-                        <label for="radios-1">
-                          <input type="radio" name="radios" id="radios-1" value="2">
-                          Salmon
-                        </label>
-                        </div>
-                      <div class="radio">
-                        <label for="radios-2">
-                          <input type="radio" name="radios" id="radios-2" value="3">
-                          Vegetarian
-                        </label>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <!-- Button -->
-                    <div class="form-group submit">
-                      <label class="col-md-4 control-label" for="submit"></label>
-                      <div class="col-md-4">
-                        <button id="submit" name="submit" class="btn btn-success">Submit</button>
-                      </div>
-                    </div>
-                    
-                    </fieldset>
-                    </form>
-                    </div>
+            <div id="form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKxx4803D3UVfGzBFSaxdqh4SBRiMBhGLZx8fSUJd8vq6y5w/viewform?embedded=true" onsubmit="shrinkForm();" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
             </div>
         </div>
+    </div>
         
-        <div class="hotel">
+        <div id="directions">
+                <div class="row">
+                        <div class="col-md-offset-3 col-md-6">     
+                        <div id="first">Directions to the venue</div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-offset-3 col-md-6">     
+                            <div id="second">The Trolley Barn</div>
+                        </div>
+                    </div>
+    
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">     
+                        <div class="directions2">
+                            <p>Our wedding is taking place May 6, 2018 at the Trolley Barn! It's convieniently located in Inman Park. The Trolley Barn is a neighborhood venue with very limited parking. We recommend Uber or Lyft getting to the venue if you're not staying at the hotel.
+                            </p>
+                            <p>You can click on any of the images to be directed to their respective websites</p> 
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6">      
+                                <a href="http://www.thetrolleybarn.com/"target="_blank"><img src="assets/images/trolley-barn2.jpg" class="venue-directions" alt="Venue: Trolley Barn"></a>
+                            <a href="https://www.google.com/maps/place/Trolley+Barn/@33.7562856,-84.3584145,17z/data=!3m1!4b1!4m5!3m4!1s0x88f503ff905e1bed:0xc1626dc0cd684569!8m2!3d33.7562856!4d-84.3562258" target="_blank"><img src="assets/images/map.jpg" class="map-directions" alt="Trolley Barn on map"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6">
+                            <p class="extra-info">
+                                Address: 963 Edgewood Ave NE, Atlanta, GA 30307 
+                                <a href="http://www.thetrolleybarn.com/"target="_blank">Trolley Barn Website</a>
+                            </p> 
+                            <p class="trolley-info">We have rented a trolley to take guests from the Crowne Plaza to the venue and back, stand by for more info!</p>
+                        </div>
+                    </div>  
+                </div>
+
+
+        <div id="hotel">
             <div class="row">
                 <div class="col-md-offset-3 col-md-6"> 
                     <div id="first">Hotel Accomodations</div>
@@ -208,8 +161,8 @@
                         <p>For all our out-of-town guest we have reserved a large block of rooms with the Crown Plaza in Midtown. The Group Code is <strong><u>GBI.</u></strong>
                         </p>
                         <p>    
-                            We have secured the low rate of $129 for anyone staying at the hotel. Click link below for more info: 
-                            <a href="https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlpw/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qGrpCd=GBI&qIta=99801505&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505" target="_blank">Link</a>
+                            We have secured the low rate of $129 for anyone staying at the hotel. Click
+                            <a href="https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlpw/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qGrpCd=GBI&qIta=99801505&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505" target="_blank"><strong><u>link</u></strong></a> for more info!
                         </p>   
                     </div>
                 </div>
@@ -217,11 +170,11 @@
             <div class="row">    
                 <div class="col-md-offset-3 col-md-6"> 
                         <a href="https://www.ihg.com/crowneplaza/hotels/us/en/atlanta/atlpw/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qGrpCd=GBI&qIta=99801505&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505" target="_blank">
-                            <img src="crown-plaza.jpg" class="hotel-map" alt="Hotel: Crown Plaza">
+                            <img src="assets/images/crown-plaza.jpg" class="hotel-map" alt="Hotel: Crown Plaza">
                         </a>
 
                         <a href="https://www.google.com/maps/place/Crowne+Plaza+Atlanta+-+Midtown/@33.7702064,-84.389822,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50465286e7e99:0x30bcb5136bd62d2d!8m2!3d33.7702064!4d-84.3876333" target="_blank">
-                            <img src="crown-plaza-map.jpg" class="hotel-directions" alt="Hotel: Crown Plaza">
+                            <img src="assets/images/crown-plaza-map.jpg" class="hotel-directions" alt="Hotel: Crown Plaza">
                         </a>
                     
                 </div>
@@ -229,84 +182,51 @@
             <div class="row">    
                 <div class="col-md-offset-3 col-md-6"> 
                     <p class="extra-info">
-                        You can also give them a call at 1-855-646-8549 and give them our group code of <strong><u>GBI</u></strong> to make your reservations.
+                        You can also give them a call at 1-855-646-8549 and give them our group code of <strong><u>GBI</u></strong> to make your reservations. As noted above, transportation will be provided via trolley to and from the venue exclusively for guests staying at this hotel!
                     </p> 
                 </div>
             </div>
         </div>
 
 
-        <div class="gallery">
+        <div id="gallery">
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4"> 
-                        <div id="first">Gallery</div>
+                        <div id="first-centered">Gallery</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">     
-                        <div class="third">Getting our engagement photos done was an amazing experience. We are absolutely thrilled with how they turned out. We had such a great time at the Chattahoochie with our amazing photographer Marie Claire. She really caught "the moments" and we will cherish these forever. Stay tuned, we're still digging up more pics and will post them as they surface!
+                        <div class="third">Getting our engagement photos done was an amazing experience. We are absolutely thrilled with how they turned out. We had such a great time at the Chattahoochie with our amazing photographer Mary Claire. She really caught "the moments" and we will cherish these forever. Stay tuned, we're still digging up more pics and will post them as they surface!
                         </div>
                     </div>
                 </div>
 
-                <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
                 <div class="row">
-                    <div class="col-md-offset-3 col-md-9"> 
-                        <div id="engagement-photos">
-                            <img src="IMG_5427.jpg" id="us2" alt="">
-                            <img src="IMG_5428.jpg" id="us2" alt="">
-                            <img src="IMG_5430.jpg" id="us2" alt="">
-                            <p></p>
-                            <img src="IMG_5431.jpg" id="us2" alt="">
-                            <img src="IMG_5432.jpg" id="us2" alt="">
-                            <img src="IMG_5434.jpg" id="us2" alt="">
+                    <div class="col-md-offset-2 col-md-12 photos"> 
+                        <div class="main-img">
+                            <img src="assets/images/maryclairephoto.dkengagement-0230.jpg" id="current">
+                        </div>
+                        <div class="imgs"> 
+                            <img src="assets/images/maryclairephoto.dkengagement-0230.jpg">   
+                            <img src="assets/images/maryclairephoto.dkengagement-0222.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0227.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0086.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0192.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0189.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0027.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0160.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0109.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0083.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0078.jpg">
+                            <img src="assets/images/maryclairephoto.dkengagement-0022.jpg">
                         </div>
                     </div>
                 </div>
         </div>
 
-        <div class="directions">
-                <div class="row">
-                        <div class="col-md-offset-3 col-md-6">     
-                        <div id="first">Directions to the venue</div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-md-offset-3 col-md-6">     
-                            <div id="second">The Trolley Barn</div>
-                        </div>
-                    </div>
-    
-                <div class="row">
-                    <div class="col-md-offset-3 col-md-6">     
-                        <div class="directions2">
-                            <p>Our wedding is taking place May 6th 2018 at the Trolley Barn! It's convieniently located in Inman Park. Opened in 1889 as a service housing facility for Atlantas exlectric Street railway line. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6">      
-                                <a href="http://www.thetrolleybarn.com/"target="_blank"><img src="trolley-barn2.jpg" class="venue-directions" alt="Venue: Trolley Barn"></a>
-                            <a href="https://www.google.com/maps/place/Trolley+Barn/@33.7562856,-84.3584145,17z/data=!3m1!4b1!4m5!3m4!1s0x88f503ff905e1bed:0xc1626dc0cd684569!8m2!3d33.7562856!4d-84.3562258" target="_blank"><img src="map.jpg" class="map-directions" alt="Trolley Barn on map"></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-3 col-md-6">
-                            <p class="extra-info">
-                                Address: 963 Edgewood Ave NE, Atlanta, GA 30307 
-                                <a href="http://www.thetrolleybarn.com/"target="_blank">Trolly Barn Website</a>
-                            </p> 
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="registry">
+       
+                <div id="registry">
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6"> 
                             <div id="first">Registry</div>
@@ -325,9 +245,12 @@
                     </div>        
                         <div class="row">
                             <div class="col-md-offset-3 col-md-6"> 
-                                <img src="zola.png" class="registry-logo">
-                                <img src="bbb.png" class="registry-logo">
-                                <img src="west-elm.jpg" class="registry-logo">
+                                <a href="https://www.blueprintregistry.com/registry/teamkronny" target="_blank">
+                                    <img src="assets/images/blueprint.png" class="registry-logo">
+                                </a>
+                                <a href="https://www.williams-sonoma.com/registry/teamkronny" target="_blank">
+                                    <img src="assets/images/williams.png" class="registry-logo">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -335,14 +258,14 @@
                 <div class="thanks">
                     <div class="row">
                         <div class="col-md-offset-4 col-md-4"> 
-                            <div id="first">Thank you!</div>
+                            <div id="first-centered">Thank you!</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6"> 
                             <div class="thanks1">
                                 <p>Thank you so much for being a part of our lives. It wouldn't be the same without you.
-                                    If you have any additional questions please don't hesitate to reach Kristen or Myself.
+                                    If you have any additional questions please don't hesitate to reach Kristen or Donny.
                                     We can't wait to see you on our big day!
                                 </p>
                             </div>
@@ -354,7 +277,7 @@
 
 </body>
     
-<script src="app.js"></script>
+<script src="assets/javascript/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
