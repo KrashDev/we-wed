@@ -5,6 +5,8 @@ body {
 
 .container-fluid {
     padding:0px !important;
+    margin:10px !important;
+    overflow:hidden;
 }
 
 #slideshow { 
@@ -436,7 +438,6 @@ hr {
     text-decoration: underline;
     padding-top:40px;
     border-top: 2px solid #999;
-    border-bottom: 2px solid #999;
     padding-bottom: 4%;
     width:100%;
     font-family: 'Pacifico', cursive;
@@ -456,3 +457,13 @@ footer {
     color:#000;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width:900px) {
+   #clockdiv {
+       visibility:hidden;
+   }
+   #rsvp {
+       width:100%;
+   }
+}
